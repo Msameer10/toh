@@ -19,10 +19,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" id="navlink">Home</a>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" aria-current="page" href="#" id="navlink">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-block d-lg-none">
           <a class="nav-link" href="#" id="navlink">Link</a>
         </li>
       </ul>
@@ -33,6 +33,33 @@
     </div>
   </div>
 </nav>
+
+<!-----------------------------------Sidebar--------------------------------------------->
+
+<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark d-none d-lg-block d-xl-block">
+  <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+      <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+          <li class="nav-item">
+              <a href="#" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">2</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">3</span>
+              </a>
+          </li> 
+      </ul>
+    </div>
+  </div>
+</div>
+
+
 <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
     <script type="importmap">
     {
