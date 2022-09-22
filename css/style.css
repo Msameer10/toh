@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 
 
+
+
+/*---------navbar-------------*/
 #title{
 	color: #D0D3D4;
 	font-family: 'Reem Kufi Ink';
@@ -19,28 +23,135 @@
 }
 
 #navlink{
-	color: #F39C12;
+	color: #F5B041;
+	text-align: center;
 }
 
-a#title.navbar-brand{
-	margin-right: 5vw;
+.navactive{
+	background-color: #1A5276;
 }
 
-a#navlink.nav-link{
-	padding-right: 2vw;
-	padding-left: 2vw;
-}
-
-div.col-auto{
-	max-width: 12vw;
-	padding-left: 30px;
-}
-
-div.col-auto a{
+#navlink:hover {
 	color: white;
-	padding-left: 5%;
 }
 
-ul#menu.nav.nav-pills{
-	padding-left: 2.2vw;
+#navlink:active {
+	color: white;
+}
+
+/*---------sidebar-------------*/
+
+#offcanvasbtn{
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 15px;
+	text-align: center;
+	margin: 2vh 0 0 5vw;
+}
+
+#offcanvasbtn:hover{
+	background-color: #212F3D;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 9.8vh; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidmnu:hover {
+  color: #A93226;
+  background-color: #1C2833;
+}
+
+.act{
+	background-color: #273746;
+}
+
+.sidmnu{
+	text-align: center;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/**************************-------------------Main-------------------*****************************/
+#banner{
+  color: red;
+  font-family: Cinzel;
+  font-size: 6vw;
+  text-align: center;
+  padding: 15vh 0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://w7.pngwing.com/pngs/211/238/png-transparent-golden-plant-emblem-leaf-atmosphere-logo.png">
 	<!-- W3 schools CSS -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -10,7 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Timeline of History</title>
 </head>
-<body>
+<body id="bg">
+  <!---------------------Navbar-------------------------->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #2471A3;">
   <div class="container-fluid">
     <a class="navbar-brand" id="title" href="#">Timeline of History</a>
@@ -20,10 +22,14 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item d-block d-lg-none">
-          <a class="nav-link" aria-current="page" href="#" id="navlink">Home</a>
+          <a class="nav-link navactive" href="index.html" id="navlink">Home</a>
         </li>
         <li class="nav-item d-block d-lg-none">
-          <a class="nav-link" href="#" id="navlink">Link</a>
+          <a class="nav-link" href="#" id="navlink">xx Century</a>
+        </li>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="#" id="navlink">xx Century</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -36,43 +42,115 @@
 
 <!-----------------------------------Sidebar--------------------------------------------->
 
-<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark d-none d-lg-block d-xl-block">
-  <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-      <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-          <li class="nav-item">
-              <a href="#" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">2</span>
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="#" class="nav-link align-middle px-0">
-                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">3</span>
-              </a>
-          </li> 
-      </ul>
-    </div>
+<div id="mySidenav" class="sidenav d-none d-lg-block d-xl-block">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" class="sidmnu act">Home</a>
+  <a href="#" class="sidmnu">xx Century</a>
+  <a href="#" class="sidmnu">xx Century</a>
+  <a href="#" class="sidmnu">xx Century</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<button onclick="openNav()" id="offcanvasbtn" class=" d-none d-lg-block d-xl-block">&#9776; Menu</button>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  
+</div>
+
+<!-----------------------------------------Main Content---------------------------------------->
+
+<div class="container-fluid">
+  <div id="banner">From genesis to the contemporary history.</div>
+  <div class="row"> 
+  <div class="column">
+    <img src="https://images.pexels.com/photos/3185488/pexels-photo-3185488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/3199399/pexels-photo-3199399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
+    <img src="https://images.pexels.com/photos/820735/pexels-photo-820735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/4365100/pexels-photo-4365100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/6207365/pexels-photo-6207365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://images.pexels.com/photos/11118384/pexels-photo-11118384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/6642509/pexels-photo-6642509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1541873676-a18131494184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=418&q=80" style="width:100%">
+    <img src="https://images.pexels.com/photos/339887/pexels-photo-339887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1585157603875-17aacca6182a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=419&q=80" style="width:100%">
+    <img src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://images.pexels.com/photos/1542620/pexels-photo-1542620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/13196943/pexels-photo-13196943.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1574088768814-c71125083959?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=445&q=80" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" style="width:100%">
+    <img src="https://images.pexels.com/photos/7364075/pexels-photo-7364075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/192734/pexels-photo-192734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1317&q=80" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1562673005-7693bd6d6e54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1575550597081-13c89a6aedf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1585159858792-ceb6be5c1937?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" style="width:100%">
+    <img src="https://images.pexels.com/photos/5745774/pexels-photo-5745774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1536704457276-2271a3d53915?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" style="width:100%">
+    <img src="https://images.pexels.com/photos/5157220/pexels-photo-5157220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1603565439270-39a1b91564c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" style="width:100%">
+    <img src="https://images.pexels.com/photos/5824908/pexels-photo-5824908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Anonymous_-_Prise_de_la_Bastille.jpg/1200px-Anonymous_-_Prise_de_la_Bastille.jpg" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1580715911453-d6d9cffd5771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=507&q=80" style="width:100%">
+    <img src="https://www.gannett-cdn.com/media/2021/02/10/USATODAY/usatsports/247WallSt.com-247WS-837078-wright-brothers.jpg" style="width:100%">
+    <img src="https://images.pexels.com/photos/678777/pexels-photo-678777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://cdn.britannica.com/20/153520-050-177A78E4/Kabah-hajj-pilgrims-Saudi-Arabia-Mecca.jpg" style="width:100%">
+    <img src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/story/hero_image/1908-Ford-Model-T_0.jpg" style="width:100%">
+    <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTgyMzA5MTk1OTUxOTA4MTY4/ice-age-gettyimages-588446531.jpg" style="width:100%">
+    <img src="https://images.pexels.com/photos/2350366/pexels-photo-2350366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/161798/stonehenge-architecture-history-monolith-161798.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+    <img src="https://img-cdn-china-admissions.imgix.net/wp-content/uploads/2021/12/marco-polo.jpg?auto=format%2Cenhance%2Ccompress" style="width:100%">
   </div>
 </div>
+</div>
+
+<!-----------------------------------Scripts------------------------------------------>
+
+<script type="text/javascript">
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+
 
 
 <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
-    <script type="importmap">
-    {
-      "imports": {
-        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
-        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.esm.min.js"
-      }
+<script type="importmap">
+  {
+    "imports": {
+      "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+      "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.esm.min.js"
     }
-    </script>
-    <script type="module">
-      import * as bootstrap from 'bootstrap'
+  }
+</script>
+<script type="module">
+  import * as bootstrap from 'bootstrap'
 
-      new bootstrap.Popover(document.getElementById('popoverButton'))
-    </script>
+  new bootstrap.Popover(document.getElementById('popoverButton'))
+</script>
 </body>
 </html>
